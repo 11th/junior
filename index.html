@@ -1,13 +1,17 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Portfolio juniorinternet design category
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class="jumbotron">
+  <div class="container">
+      <h1 class="title">{{ site.name }}</h1>
+      <p>Design category entry by Miroslav Petrik</p>
+      <a href="https://github.com/11th/junior" class="btn btn-primary">GitHub</a>
+  </div>
 </div>
+
+
+<!-- {% for post in site.posts %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a><img src="{{ page.img }}" alt=""></li>
+{% endfor %} -->
