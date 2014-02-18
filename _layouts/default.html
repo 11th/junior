@@ -6,36 +6,31 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="./css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="./css/main.css">
-
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <script src="./js/bootstrap.min.js"></script>
     </head>
     <body>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
+          <div class="jumbotron">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <h1 class="title">{{ site.name }}</h1>
+                <p>Design category entry by Miroslav Petrik</p>
+                <a href="https://github.com/11th/junior" class="btn btn-primary">GitHub</a>
+              </div>
             </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
+          </div>
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+              {{ content }}
+              <div class="footer">
+                <div class="contact">
+                  <p>
+                    <a href="https://github.com/11th">github.com/11th</a><br />
+                    <a href="https://twitter.com/miroslavpetrik">twitter.com/miroslavpetrik</a><br />
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
